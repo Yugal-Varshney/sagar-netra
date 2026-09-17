@@ -333,6 +333,7 @@ cache/
 The prototype includes a deterministic demo flow so that the complete investigation pipeline can be demonstrated reliably to judges.
 
 🟢 Scenario A — Normal Patrol
+
 Step 1
 
 Open:
