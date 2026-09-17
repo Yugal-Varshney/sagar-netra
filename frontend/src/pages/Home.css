@@ -1,0 +1,1229 @@
+/* =========================================================
+   SAGAR NETRA — HOME PAGE
+   Clean Maritime Intelligence Landing Page
+   ========================================================= */
+
+
+/* =========================================================
+   PAGE
+   ========================================================= */
+
+.home-page {
+  width: 100%;
+  min-height: calc(100vh - 76px);
+
+  box-sizing: border-box;
+
+  position: relative;
+
+  overflow-x: hidden;
+
+  background:
+    linear-gradient(
+      180deg,
+      #f9fcfe 0%,
+      #ffffff 38%,
+      #f8fcfe 100%
+    );
+
+  color: #10182e;
+}
+
+
+/* =========================================================
+   SUBTLE TECHNICAL GRID
+   ========================================================= */
+
+.home-page::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  pointer-events: none;
+
+  opacity: 0.42;
+
+  background-image:
+    linear-gradient(
+      rgba(21, 143, 180, 0.035) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(21, 143, 180, 0.035) 1px,
+      transparent 1px
+    );
+
+  background-size:
+    48px 48px;
+
+  mask-image:
+    linear-gradient(
+      to bottom,
+      black 0%,
+      transparent 72%
+    );
+
+  -webkit-mask-image:
+    linear-gradient(
+      to bottom,
+      black 0%,
+      transparent 72%
+    );
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.home-hero {
+  width: 100%;
+  max-width: 1500px;
+
+  margin: 0 auto;
+
+  padding:
+    34px
+    48px
+    28px;
+
+  box-sizing: border-box;
+
+  display: grid;
+
+  grid-template-columns:
+    44%
+    56%;
+
+  align-items: center;
+
+  min-height:
+    calc(100vh - 76px);
+
+  position: relative;
+
+  z-index: 1;
+}
+
+
+/* =========================================================
+   LEFT CONTENT
+   ========================================================= */
+
+.hero-content {
+  width: 100%;
+
+  max-width: 620px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  position: relative;
+
+  z-index: 3;
+}
+
+
+/* =========================================================
+   BADGE
+   ========================================================= */
+
+.hero-badge {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding:
+    10px
+    17px;
+
+  border:
+    1px solid
+    #b9e8f3;
+
+  border-radius: 999px;
+
+  background:
+    rgba(246, 253, 255, 0.92);
+
+  color: #0786a8;
+
+  font-family:
+    "SFMono-Regular",
+    Consolas,
+    "Liberation Mono",
+    monospace;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 24px;
+
+  box-shadow:
+    0 5px 18px rgba(16, 130, 164, 0.04);
+}
+
+
+/* =========================================================
+   TITLE
+   ========================================================= */
+
+.hero-title {
+  margin: 0;
+
+  color: #10182e;
+
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  font-size:
+    clamp(56px, 5vw, 82px);
+
+  line-height: 0.98;
+
+  letter-spacing: -4px;
+
+  font-weight: 800;
+}
+
+
+/* Gradient words */
+
+.hero-title span {
+  background:
+    linear-gradient(
+      90deg,
+      #0797b9 0%,
+      #1185ce 48%,
+      #286be6 100%
+    );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.hero-description {
+  max-width: 600px;
+
+  margin:
+    27px
+    0
+    0;
+
+  color: #59718f;
+
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  font-size: 17px;
+
+  line-height: 1.7;
+
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   ACTIONS
+   ========================================================= */
+
+.hero-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  margin-top: 27px;
+}
+
+
+/* =========================================================
+   PRIMARY BUTTON
+   ========================================================= */
+
+.primary-button {
+  height: 57px;
+
+  padding:
+    0
+    25px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 17px;
+
+  border: none;
+
+  border-radius: 14px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #078ca8,
+      #087d9a
+    );
+
+  color: #ffffff;
+
+  font-family:
+    "SFMono-Regular",
+    Consolas,
+    "Liberation Mono",
+    monospace;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.7px;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 12px 28px
+    rgba(0, 126, 155, 0.18);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.primary-button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 16px 34px
+    rgba(0, 126, 155, 0.26);
+}
+
+
+.primary-button:active {
+  transform: translateY(0);
+}
+
+
+/* =========================================================
+   SECONDARY BUTTON
+   ========================================================= */
+
+.secondary-button {
+  height: 57px;
+
+  padding:
+    0
+    24px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 13px;
+
+  border:
+    1px solid
+    #d9e4ec;
+
+  border-radius: 14px;
+
+  background: #ffffff;
+
+  color: #26364d;
+
+  font-family:
+    "SFMono-Regular",
+    Consolas,
+    "Liberation Mono",
+    monospace;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.7px;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 5px 16px
+    rgba(25, 55, 80, 0.045);
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.secondary-button:hover {
+  transform: translateY(-2px);
+
+  background: #f9fcfd;
+
+  box-shadow:
+    0 10px 24px
+    rgba(25, 55, 80, 0.08);
+}
+
+
+.secondary-button:active {
+  transform: translateY(0);
+}
+
+
+/* =========================================================
+   CAPABILITY STRIP
+   ========================================================= */
+
+.capability-strip {
+  width: 100%;
+
+  max-width: 625px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  margin-top: 36px;
+
+  border:
+    1px solid
+    #dfe9ef;
+
+  background:
+    rgba(255, 255, 255, 0.76);
+
+  box-shadow:
+    0 8px 25px
+    rgba(34, 86, 110, 0.035);
+}
+
+
+.capability-item {
+  min-height: 76px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 9px;
+
+  padding:
+    8px
+    10px;
+
+  border-right:
+    1px solid
+    #dfe9ef;
+}
+
+
+.capability-item:last-child {
+  border-right: none;
+}
+
+
+.capability-item svg {
+  width: 18px;
+  height: 18px;
+
+  flex-shrink: 0;
+
+  color: #0798bc;
+}
+
+
+.capability-item div {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+}
+
+
+.capability-item strong {
+  color: #26364c;
+
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    sans-serif;
+
+  font-size: 11px;
+
+  line-height: 1.3;
+
+  font-weight: 800;
+}
+
+
+.capability-item span {
+  margin-top: 2px;
+
+  color: #7890a7;
+
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    sans-serif;
+
+  font-size: 10px;
+
+  line-height: 1.3;
+}
+
+
+/* =========================================================
+   RIGHT VISUAL
+   ========================================================= */
+
+.hero-visual {
+  width: 100%;
+
+  height: 100%;
+
+  min-height: 600px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: flex-end;
+
+  position: relative;
+
+  padding-left: 25px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   VISUAL GLOW
+   ========================================================= */
+
+.visual-glow {
+  position: absolute;
+
+  width: 620px;
+  height: 620px;
+
+  right: 4%;
+  top: 50%;
+
+  transform:
+    translateY(-50%);
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(54, 172, 218, 0.12) 0%,
+      rgba(54, 172, 218, 0.045) 40%,
+      transparent 70%
+    );
+
+  filter: blur(8px);
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   MAP FRAME
+   ========================================================= */
+
+.map-frame {
+  width: 100%;
+
+  max-width: 770px;
+
+  position: relative;
+
+  z-index: 2;
+
+  border-radius: 28px;
+
+  overflow: hidden;
+
+  background: #eaf6fc;
+
+  box-shadow:
+    0 28px 65px
+    rgba(36, 115, 150, 0.13);
+
+  border:
+    1px solid
+    rgba(160, 211, 229, 0.55);
+}
+
+
+/* =========================================================
+   MAP IMAGE
+   ========================================================= */
+
+.hero-map-image {
+  display: block;
+
+  width: 100%;
+
+  height: auto;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  user-select: none;
+
+  -webkit-user-drag: none;
+}
+
+
+/* =========================================================
+   MAP LABEL
+   ========================================================= */
+
+.map-label {
+  position: absolute;
+
+  z-index: 4;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding:
+    8px
+    11px;
+
+  border-radius: 8px;
+
+  background:
+    rgba(255, 255, 255, 0.86);
+
+  backdrop-filter:
+    blur(8px);
+
+  -webkit-backdrop-filter:
+    blur(8px);
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.9);
+
+  color: #49657d;
+
+  font-family:
+    "SFMono-Regular",
+    Consolas,
+    "Liberation Mono",
+    monospace;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+
+.map-label-top {
+  top: 18px;
+  left: 18px;
+}
+
+
+.map-label-dot {
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+
+  background: #0a9abf;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(10, 154, 191, 0.12);
+}
+
+
+/* =========================================================
+   MAP INFORMATION
+   ========================================================= */
+
+.map-info {
+  position: absolute;
+
+  z-index: 4;
+
+  left: 18px;
+  right: 18px;
+  bottom: 18px;
+
+  display: flex;
+
+  align-items: center;
+
+  width: fit-content;
+
+  padding:
+    10px
+    13px;
+
+  border-radius: 9px;
+
+  background:
+    rgba(255, 255, 255, 0.88);
+
+  backdrop-filter:
+    blur(9px);
+
+  -webkit-backdrop-filter:
+    blur(9px);
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.95);
+
+  box-shadow:
+    0 8px 20px
+    rgba(25, 75, 100, 0.08);
+}
+
+
+.map-info-item {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 2px;
+
+  min-width: 105px;
+}
+
+
+.map-info-label {
+  color: #7990a4;
+
+  font-family:
+    "SFMono-Regular",
+    Consolas,
+    "Liberation Mono",
+    monospace;
+
+  font-size: 8px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+
+.map-info-item strong {
+  color: #243b52;
+
+  font-family:
+    "SFMono-Regular",
+    Consolas,
+    "Liberation Mono",
+    monospace;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.5px;
+}
+
+
+.map-info-divider {
+  width: 1px;
+
+  height: 30px;
+
+  margin:
+    0
+    12px;
+
+  background:
+    #d8e4eb;
+}
+
+
+/* =========================================================
+   BOTTOM SYSTEM BAR
+   ========================================================= */
+
+.home-bottom {
+  width: 100%;
+
+  max-width: 1500px;
+
+  margin: 0 auto;
+
+  padding:
+    0
+    48px
+    18px;
+
+  box-sizing: border-box;
+
+  position: relative;
+
+  z-index: 2;
+}
+
+
+.bottom-line {
+  width: 100%;
+
+  height: 1px;
+
+  background: #dfe9ef;
+}
+
+
+.bottom-content {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding-top: 14px;
+}
+
+
+.bottom-item,
+.bottom-protection {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  white-space: nowrap;
+
+  font-family:
+    "SFMono-Regular",
+    Consolas,
+    "Liberation Mono",
+    monospace;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.6px;
+}
+
+
+.bottom-item {
+  color: #6c8196;
+}
+
+
+.bottom-item svg {
+  color: #0798bc;
+}
+
+
+.bottom-protection {
+  color: #62778d;
+
+  font-weight: 800;
+}
+
+
+.bottom-protection svg {
+  color: #10a67a;
+}
+
+
+/* =========================================================
+   LARGE TABLET
+   ========================================================= */
+
+@media (max-width: 1200px) {
+
+  .home-hero {
+    grid-template-columns:
+      45%
+      55%;
+
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+
+  .hero-title {
+    font-size:
+      clamp(52px, 5.2vw, 72px);
+
+    letter-spacing: -3.5px;
+  }
+
+
+  .hero-description {
+    font-size: 16px;
+  }
+
+
+  .hero-visual {
+    min-height: 540px;
+
+    padding-left: 18px;
+  }
+
+
+  .map-frame {
+    max-width: 700px;
+  }
+
+
+  .home-bottom {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 950px) {
+
+  .home-hero {
+    grid-template-columns: 1fr;
+
+    min-height: auto;
+
+    padding:
+      38px
+      32px
+      30px;
+  }
+
+
+  .hero-content {
+    max-width: 700px;
+
+    margin: 0 auto;
+  }
+
+
+  .hero-visual {
+    min-height: auto;
+
+    margin-top: 42px;
+
+    padding-left: 0;
+
+    justify-content: center;
+  }
+
+
+  .map-frame {
+    max-width: 760px;
+  }
+
+
+  .capability-strip {
+    max-width: 700px;
+  }
+
+
+  .home-bottom {
+    padding:
+      0
+      32px
+      20px;
+  }
+
+
+  .bottom-content {
+    flex-wrap: wrap;
+
+    justify-content: center;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+  .home-page {
+    min-height: auto;
+  }
+
+
+  .home-hero {
+    padding:
+      28px
+      20px
+      25px;
+  }
+
+
+  .hero-badge {
+    margin-bottom: 20px;
+
+    padding:
+      9px
+      14px;
+
+    font-size: 8px;
+
+    letter-spacing: 1.4px;
+  }
+
+
+  .hero-title {
+    font-size:
+      clamp(46px, 12.5vw, 64px);
+
+    line-height: 0.99;
+
+    letter-spacing: -3px;
+  }
+
+
+  .hero-description {
+    margin-top: 23px;
+
+    font-size: 15px;
+
+    line-height: 1.65;
+  }
+
+
+  .hero-actions {
+    width: 100%;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    margin-top: 25px;
+  }
+
+
+  .primary-button,
+  .secondary-button {
+    width: 100%;
+  }
+
+
+  .capability-strip {
+    margin-top: 30px;
+
+    grid-template-columns:
+      1fr 1fr;
+  }
+
+
+  .capability-item {
+    min-height: 72px;
+  }
+
+
+  .capability-item:nth-child(2) {
+    border-right: none;
+  }
+
+
+  .capability-item:nth-child(3),
+  .capability-item:nth-child(4) {
+    border-top:
+      1px solid
+      #dfe9ef;
+  }
+
+
+  .hero-visual {
+    margin-top: 34px;
+  }
+
+
+  .map-frame {
+    border-radius: 20px;
+  }
+
+
+  .map-label {
+    top: 12px;
+    left: 12px;
+
+    padding:
+      7px
+      9px;
+
+    font-size: 7px;
+  }
+
+
+  .map-info {
+    left: 12px;
+    bottom: 12px;
+  }
+
+
+  .map-info-item {
+    min-width: 85px;
+  }
+
+
+  .home-bottom {
+    padding:
+      0
+      20px
+      20px;
+  }
+
+
+  .bottom-content {
+    display: grid;
+
+    grid-template-columns:
+      1fr 1fr;
+
+    gap:
+      12px
+      15px;
+
+    justify-items: start;
+  }
+
+
+  .bottom-protection {
+    grid-column: 1 / -1;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+  .home-hero {
+    padding:
+      24px
+      16px
+      22px;
+  }
+
+
+  .hero-title {
+    font-size: 45px;
+
+    letter-spacing: -2.5px;
+  }
+
+
+  .hero-description {
+    font-size: 14px;
+  }
+
+
+  .capability-item {
+    gap: 7px;
+
+    padding:
+      8px;
+  }
+
+
+  .capability-item strong {
+    font-size: 10px;
+  }
+
+
+  .capability-item span {
+    font-size: 9px;
+  }
+
+
+  .map-info {
+    padding:
+      8px
+      10px;
+  }
+
+
+  .map-info-item {
+    min-width: 75px;
+  }
+
+
+  .map-info-divider {
+    margin:
+      0
+      8px;
+  }
+
+
+  .bottom-item,
+  .bottom-protection {
+    font-size: 8px;
+  }
+
+}
