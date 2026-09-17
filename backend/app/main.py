@@ -109,7 +109,13 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Or specify your Vercel domains
+    allow_origins=[
+        "https://sagar-netra-git-main-yugal-work.vercel.app",
+        "https://sagar-netra-82cmdu1ze-yugal-work.vercel.app",
+        "http://localhost:3000",
+        "http://localhost:5173",
+        "*",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
